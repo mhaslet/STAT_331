@@ -1,0 +1,2166 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Videos 1 - 4</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="Videos_1-4_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Videos_1-4_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="Videos_1-4_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="Videos_1-4_files/libs/quarto-html/popper.min.js"></script>
+<script src="Videos_1-4_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="Videos_1-4_files/libs/quarto-html/anchor.min.js"></script>
+<link href="Videos_1-4_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Videos_1-4_files/libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="Videos_1-4_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="Videos_1-4_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="Videos_1-4_files/libs/bootstrap/bootstrap-81267100e462c21b3d6c0d5bf76a3417.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="5">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#video-1-r-basics-with-mtcars" id="toc-video-1-r-basics-with-mtcars" class="nav-link active" data-scroll-target="#video-1-r-basics-with-mtcars"><strong>Video 1) R &amp; Basics with <code>mtcars</code></strong></a>
+  <ul>
+  <li><a href="#packages-libraries" id="toc-packages-libraries" class="nav-link" data-scroll-target="#packages-libraries"><strong>Packages &amp; Libraries</strong></a></li>
+  <li><a href="#look-at-structure-data" id="toc-look-at-structure-data" class="nav-link" data-scroll-target="#look-at-structure-data"><strong>Look at structure Data</strong></a></li>
+  <li><a href="#view-data" id="toc-view-data" class="nav-link" data-scroll-target="#view-data"><strong>View Data</strong></a></li>
+  <li><a href="#data-structures" id="toc-data-structures" class="nav-link" data-scroll-target="#data-structures"><strong>Data Structures</strong></a>
+  <ul>
+  <li><a href="#a-vectors" id="toc-a-vectors" class="nav-link" data-scroll-target="#a-vectors"><strong>a) Vectors</strong></a></li>
+  <li><a href="#b-data-frames" id="toc-b-data-frames" class="nav-link" data-scroll-target="#b-data-frames"><strong>b) Data Frames</strong></a></li>
+  <li><a href="#tibble-and-data-frames" id="toc-tibble-and-data-frames" class="nav-link" data-scroll-target="#tibble-and-data-frames"><strong>Tibble and Data Frames</strong></a></li>
+  <li><a href="#c-lists" id="toc-c-lists" class="nav-link" data-scroll-target="#c-lists"><strong>c) Lists</strong></a></li>
+  </ul></li>
+  <li><a href="#lists" id="toc-lists" class="nav-link" data-scroll-target="#lists"><strong>Lists</strong></a></li>
+  </ul></li>
+  <li><a href="#video-2-dplyr---1-core-data-transformations" id="toc-video-2-dplyr---1-core-data-transformations" class="nav-link" data-scroll-target="#video-2-dplyr---1-core-data-transformations"><strong>Video 2) <code>dplyr</code> - 1: Core Data Transformations</strong></a>
+  <ul>
+  <li><a href="#pipe-operator" id="toc-pipe-operator" class="nav-link" data-scroll-target="#pipe-operator"><strong>Pipe Operator</strong></a></li>
+  <li><a href="#core-data-transformations" id="toc-core-data-transformations" class="nav-link" data-scroll-target="#core-data-transformations"><strong>Core Data Transformations</strong></a>
+  <ul>
+  <li><a href="#select-choose-columns" id="toc-select-choose-columns" class="nav-link" data-scroll-target="#select-choose-columns"><strong>1. <code>select()</code>: Choose Columns</strong></a>
+  <ul class="collapse">
+  <li><a href="#pull-get-a-vector" id="toc-pull-get-a-vector" class="nav-link" data-scroll-target="#pull-get-a-vector"><strong><code>pull()</code>: Get A Vector</strong></a></li>
+  </ul></li>
+  <li><a href="#mutate-create-new-columns" id="toc-mutate-create-new-columns" class="nav-link" data-scroll-target="#mutate-create-new-columns"><strong>2. <code>mutate()</code>: Create New Columns</strong></a></li>
+  <li><a href="#filter-keep-rows" id="toc-filter-keep-rows" class="nav-link" data-scroll-target="#filter-keep-rows"><strong>3. <code>filter()</code>: Keep Rows</strong></a></li>
+  <li><a href="#group_by-summarize-get-group-summaries" id="toc-group_by-summarize-get-group-summaries" class="nav-link" data-scroll-target="#group_by-summarize-get-group-summaries"><strong>4. <code>group_by()</code> &amp; <code>summarize()</code>: Get Group Summaries</strong></a></li>
+  <li><a href="#arrange-sort-rows" id="toc-arrange-sort-rows" class="nav-link" data-scroll-target="#arrange-sort-rows"><strong>5. <code>arrange()</code>: Sort Rows</strong></a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#video-3-ggplot2---1-the-grammar-of-graphics" id="toc-video-3-ggplot2---1-the-grammar-of-graphics" class="nav-link" data-scroll-target="#video-3-ggplot2---1-the-grammar-of-graphics"><strong>Video 3) <code>ggplot2</code> - 1: The Grammar of Graphics</strong></a>
+  <ul>
+  <li><a href="#ggplot-and--" id="toc-ggplot-and--" class="nav-link" data-scroll-target="#ggplot-and--"><strong>ggplot and - <code>+</code></strong></a></li>
+  <li><a href="#plot-types" id="toc-plot-types" class="nav-link" data-scroll-target="#plot-types"><strong>Plot Types</strong></a>
+  <ul>
+  <li><a href="#plot-1-scatter-plot" id="toc-plot-1-scatter-plot" class="nav-link" data-scroll-target="#plot-1-scatter-plot"><strong>Plot 1: Scatter Plot</strong></a></li>
+  <li><a href="#plot-2-histogram" id="toc-plot-2-histogram" class="nav-link" data-scroll-target="#plot-2-histogram"><strong>Plot 2: Histogram</strong></a></li>
+  <li><a href="#plot-3-boxplot" id="toc-plot-3-boxplot" class="nav-link" data-scroll-target="#plot-3-boxplot"><strong>Plot 3: Boxplot</strong></a></li>
+  <li><a href="#plot-4-enhancing-a-plot-layer-by-layer" id="toc-plot-4-enhancing-a-plot-layer-by-layer" class="nav-link" data-scroll-target="#plot-4-enhancing-a-plot-layer-by-layer"><strong>Plot 4: Enhancing a Plot Layer by Layer</strong></a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#video-4-dplyr---2-tidyr-advanced-transformation" id="toc-video-4-dplyr---2-tidyr-advanced-transformation" class="nav-link" data-scroll-target="#video-4-dplyr---2-tidyr-advanced-transformation"><strong>Video 4) <code>dplyr</code> - 2 &amp; <code>tidyr</code>: Advanced Transformation</strong></a>
+  <ul>
+  <li><a href="#reshape-data" id="toc-reshape-data" class="nav-link" data-scroll-target="#reshape-data"><strong>Reshape Data</strong></a></li>
+  <li><a href="#binds" id="toc-binds" class="nav-link" data-scroll-target="#binds"><strong>Binds</strong></a>
+  <ul>
+  <li><a href="#bind_rows" id="toc-bind_rows" class="nav-link" data-scroll-target="#bind_rows"><strong>1. <code>bind_rows</code></strong></a></li>
+  <li><a href="#bind_cols" id="toc-bind_cols" class="nav-link" data-scroll-target="#bind_cols"><strong>2. <code>bind_cols</code></strong></a></li>
+  </ul></li>
+  <li><a href="#joins-combining-data-by-a-key" id="toc-joins-combining-data-by-a-key" class="nav-link" data-scroll-target="#joins-combining-data-by-a-key"><strong>Joins: Combining Data by a Key</strong></a>
+  <ul>
+  <li><a href="#left_join" id="toc-left_join" class="nav-link" data-scroll-target="#left_join"><strong>1. <code>left_join</code></strong></a></li>
+  <li><a href="#inner_join" id="toc-inner_join" class="nav-link" data-scroll-target="#inner_join"><strong>2. <code>inner_join</code></strong></a></li>
+  <li><a href="#full_join" id="toc-full_join" class="nav-link" data-scroll-target="#full_join"><strong>3. <code>full_join</code></strong></a></li>
+  <li><a href="#semi_join" id="toc-semi_join" class="nav-link" data-scroll-target="#semi_join"><strong>4. <code>semi_join</code></strong></a></li>
+  </ul></li>
+  <li><a href="#pivots-reshaping-data-layout" id="toc-pivots-reshaping-data-layout" class="nav-link" data-scroll-target="#pivots-reshaping-data-layout"><strong>Pivots: Reshaping Data Layout</strong></a>
+  <ul>
+  <li><a href="#a.-pivot_longer" id="toc-a.-pivot_longer" class="nav-link" data-scroll-target="#a.-pivot_longer"><strong>a. <code>pivot_longer</code></strong></a></li>
+  <li><a href="#b.-pivot_wider" id="toc-b.-pivot_wider" class="nav-link" data-scroll-target="#b.-pivot_wider"><strong>b. <code>pivot_wider</code></strong></a></li>
+  </ul></li>
+  <li><a href="#separate-unite" id="toc-separate-unite" class="nav-link" data-scroll-target="#separate-unite"><strong><code>separate()</code> &amp; <code>unite()</code></strong></a>
+  <ul>
+  <li><a href="#a.separate" id="toc-a.separate" class="nav-link" data-scroll-target="#a.separate"><strong>a.<code>separate()</code></strong></a></li>
+  <li><a href="#b.-unite" id="toc-b.-unite" class="nav-link" data-scroll-target="#b.-unite"><strong>b. <code>unite()</code></strong></a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Videos 1 - 4</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="video-1-r-basics-with-mtcars" class="level2">
+<h2 class="anchored" data-anchor-id="video-1-r-basics-with-mtcars"><strong>Video 1) R &amp; Basics with <code>mtcars</code></strong></h2>
+<section id="packages-libraries" class="level3">
+<h3 class="anchored" data-anchor-id="packages-libraries"><strong>Packages &amp; Libraries</strong></h3>
+<p>This section covers the fundamental concepts of R. We will not load the entire <code>tidyverse</code> package; instead, we will load individual packages as needed to better understand the function of each one.</p>
+<p>[TODO: Explain Packages and Libraries]</p>
+<p>First, let’s inspect the <code>mtcars</code> dataset.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Look at the structure of the mtcars dataset/data frame</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(mtcars) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>'data.frame':   32 obs. of  11 variables:
+ $ mpg : num  21 21 22.8 21.4 18.7 18.1 14.3 24.4 22.8 19.2 ...
+ $ cyl : num  6 6 4 6 8 6 8 4 4 6 ...
+ $ disp: num  160 160 108 258 360 ...
+ $ hp  : num  110 110 93 110 175 105 245 62 95 123 ...
+ $ drat: num  3.9 3.9 3.85 3.08 3.15 2.76 3.21 3.69 3.92 3.92 ...
+ $ wt  : num  2.62 2.88 2.32 3.21 3.44 ...
+ $ qsec: num  16.5 17 18.6 19.4 17 ...
+ $ vs  : num  0 0 1 1 0 1 0 1 1 1 ...
+ $ am  : num  1 1 1 0 0 0 0 0 0 0 ...
+ $ gear: num  4 4 4 3 3 3 3 4 4 4 ...
+ $ carb: num  4 4 1 1 2 1 4 2 2 4 ...</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">help</span>(<span class="st">"mtcars"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div style="height: 100px; background-color: white;">
+
+</div>
+</section>
+<section id="look-at-structure-data" class="level3">
+<h3 class="anchored" data-anchor-id="look-at-structure-data"><strong>Look at structure Data</strong></h3>
+<p>The <code>str()</code> function shows us the structure of our data. Notice the <code>vs</code> (V/S engine) and <code>am</code> (transmission) variables are listed as <code>num</code> (numeric) but only contain 0s and 1s. These are <strong>binary</strong> variables. To learn more about them, we can use the help function by typing <code>?mtcars</code> in the console. For our purposes, we can think of these as character or factor variables (e.g., “automatic” vs.&nbsp;“manual”), and we’ll learn how to work with them later.</p>
+<p>To see the first few rows of the data, we use the <code>head()</code> function.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># The head() function displays the first six rows of the data set</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(mtcars)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                   mpg cyl disp  hp drat    wt  qsec vs am gear carb
+Mazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4
+Mazda RX4 Wag     21.0   6  160 110 3.90 2.875 17.02  0  1    4    4
+Datsun 710        22.8   4  108  93 3.85 2.320 18.61  1  1    4    1
+Hornet 4 Drive    21.4   6  258 110 3.08 3.215 19.44  1  0    3    1
+Hornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2
+Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre>
+</div>
+</div>
+<div style="height: 100px; background-color: white;">
+
+</div>
+</section>
+<section id="view-data" class="level3">
+<h3 class="anchored" data-anchor-id="view-data"><strong>View Data</strong></h3>
+<p>If you want to see the entire interactive data frame in a new tab, you can use the <code>View()</code> function (with a capital “V”). Running <code>View(mtcars)</code> in your console will open it.</p>
+<p>Gives data distribution and a table of values.</p>
+<hr>
+</section>
+<section id="data-structures" class="level3">
+<h3 class="anchored" data-anchor-id="data-structures"><strong>Data Structures</strong></h3>
+<section id="a-vectors" class="level4">
+<h4 class="anchored" data-anchor-id="a-vectors"><strong>a) Vectors</strong></h4>
+<p>A vector is a one-dimensional sequence of data elements of the same type. This type can be numeric, character (string), or logical (boolean).</p>
+<ul>
+<li><strong>Numeric</strong>: Numbers (e.g., 10.5, 55, -3)</li>
+<li><strong>Character</strong>: Text, also known as strings (e.g., “hello”, “R”)</li>
+<li><strong>Logical</strong>: TRUE or FALSE values, also known as booleans.</li>
+</ul>
+<p>Can only have a vector of numbers, or of characters, etc.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># # Create a numeric vector of miles-per-gallon (mpg) values</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>mpg_vector <span class="ot">&lt;-</span> mtcars<span class="sc">$</span>mpg</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>mpg_vector</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] 21.0 21.0 22.8 21.4 18.7 18.1 14.3 24.4 22.8 19.2 17.8 16.4 17.3 15.2 10.4
+[16] 10.4 14.7 32.4 30.4 33.9 21.5 15.5 15.2 13.3 19.2 27.3 26.0 30.4 15.8 19.7
+[31] 15.0 21.4</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># # Create a character vector of the car names (row names)</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>car_names_vector <span class="ot">&lt;-</span> <span class="fu">rownames</span>(mtcars)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>car_names_vector</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] "Mazda RX4"           "Mazda RX4 Wag"       "Datsun 710"         
+ [4] "Hornet 4 Drive"      "Hornet Sportabout"   "Valiant"            
+ [7] "Duster 360"          "Merc 240D"           "Merc 230"           
+[10] "Merc 280"            "Merc 280C"           "Merc 450SE"         
+[13] "Merc 450SL"          "Merc 450SLC"         "Cadillac Fleetwood" 
+[16] "Lincoln Continental" "Chrysler Imperial"   "Fiat 128"           
+[19] "Honda Civic"         "Toyota Corolla"      "Toyota Corona"      
+[22] "Dodge Challenger"    "AMC Javelin"         "Camaro Z28"         
+[25] "Pontiac Firebird"    "Fiat X1-9"           "Porsche 914-2"      
+[28] "Lotus Europa"        "Ford Pantera L"      "Ferrari Dino"       
+[31] "Maserati Bora"       "Volvo 142E"         </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># # Create a boolean vector indicating if a car has more than 150 horsepower</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>powerful_boolean_vector <span class="ot">&lt;-</span> mtcars<span class="sc">$</span>hp <span class="sc">&gt;</span> <span class="dv">150</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>powerful_boolean_vector</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] FALSE FALSE FALSE FALSE  TRUE FALSE  TRUE FALSE FALSE FALSE FALSE  TRUE
+[13]  TRUE  TRUE  TRUE  TRUE  TRUE FALSE FALSE FALSE FALSE FALSE FALSE  TRUE
+[25]  TRUE FALSE FALSE FALSE  TRUE  TRUE  TRUE FALSE</code></pre>
+</div>
+</div>
+<div style="height: 100px; background-color: white;">
+
+</div>
+</section>
+<section id="b-data-frames" class="level4">
+<h4 class="anchored" data-anchor-id="b-data-frames"><strong>b) Data Frames</strong></h4>
+<p>This is the primary structure for tabular data in R. <code>mtcars</code> is a classic example.</p>
+</section>
+<section id="tibble-and-data-frames" class="level4">
+<h4 class="anchored" data-anchor-id="tibble-and-data-frames"><strong>Tibble and Data Frames</strong></h4>
+<p>While I primarily use data frames because that’s what I’m used to, you will often see another modern data frame structure online called a <strong>tibble</strong>. They behave very similarly but have some friendlier printing and subsetting features.</p>
+<ul>
+<li><p>Can store information in a data frame that can be analyzed and visualized.</p></li>
+<li><p>Tibbles have more functionality than data frames</p></li>
+<li><p>Can check the class of an object/dataset using <code>class(object)</code></p></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># # Check the class of the mtcars object</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(mtcars)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "data.frame"</code></pre>
+</div>
+</div>
+<div style="height: 100px; background-color: white;">
+
+</div>
+</section>
+<section id="c-lists" class="level4">
+<h4 class="anchored" data-anchor-id="c-lists"><strong>c) Lists</strong></h4>
+<p>A list is a versatile R object that can contain elements of different types.</p>
+</section>
+</section>
+<section id="lists" class="level3">
+<h3 class="anchored" data-anchor-id="lists"><strong>Lists</strong></h3>
+<p>If you’re familiar with programming, a <strong>named list</strong> in R is very similar to a <strong>JSON</strong> object or a <strong>dictionary</strong> in Python. There are many ways of extracting information from lists; here are a few common ones.</p>
+<ul>
+<li><p>Combination of data frames and vectors or lists within lists as an entity</p></li>
+<li><p>Store data in a thing that you can access to</p></li>
+<li><p><code>head(mtcars,3)</code> is the first 3 rows</p></li>
+<li><p>columns have to be the same data type</p></li>
+</ul>
+<p><strong>Creating a list and extracting elements from a list:</strong></p>
+<ul>
+<li><p>Method 1: extracting with <code>$</code> operator</p></li>
+<li><p>Method 2: using <code>[[_]]</code> with the name of which statistic you want (e.g.&nbsp;‘mpg_stats’)</p></li>
+<li><p>Method 3: using <code>[[_]]</code> with the index of which statistic (e.g.&nbsp;2)</p></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># # Create a list containing a numeric vector and a data frame</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>my_list <span class="ot">&lt;-</span> <span class="fu">list</span>(</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>   <span class="at">description =</span> <span class="st">"Car Data"</span>,</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>   <span class="at">mpg_stats =</span> <span class="fu">summary</span>(mtcars<span class="sc">$</span>mpg),</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>   <span class="at">sample_cars =</span> <span class="fu">head</span>(mtcars,<span class="dv">3</span>)</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a> )</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a><span class="co"># # Extract elements from the list</span></span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a><span class="co"># # Method 1: Using the $ operator</span></span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a><span class="co"># description &lt;- ____</span></span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>my_list<span class="sc">$</span>description</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Car Data"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># # Method 2: Using double square brackets [[ ]] with the name</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="co"># mpg_summary &lt;- ____</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>my_list[[<span class="st">'mpg_stats'</span>]]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  10.40   15.43   19.20   20.09   22.80   33.90 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># # Method 3: Using double square brackets [[ ]] with the index</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="co"># first_two_cars &lt;- ____</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>my_list[[<span class="dv">2</span>]]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  10.40   15.43   19.20   20.09   22.80   33.90 </code></pre>
+</div>
+</div>
+<hr>
+<div style="height: 300px; background-color: white;">
+
+</div>
+</section>
+</section>
+<section id="video-2-dplyr---1-core-data-transformations" class="level2">
+<h2 class="anchored" data-anchor-id="video-2-dplyr---1-core-data-transformations"><strong>Video 2) <code>dplyr</code> - 1: Core Data Transformations</strong></h2>
+<p>5 verbs of dplyr</p>
+<section id="pipe-operator" class="level3">
+<h3 class="anchored" data-anchor-id="pipe-operator"><strong>Pipe Operator</strong></h3>
+<p>Here we use functions from the <code>dplyr</code> package. <code>dplyr</code> provides a “grammar” for data manipulation, making code easier to write and read. We will also introduce the <strong>pipe operator (<code>%&gt;%</code>)</strong>. The pipe takes the output of the function on its left and passes it as the first argument to the function on its right. It lets you chain operations together without saving intermediate objects.</p>
+<ul>
+<li><p><code>install.packages("tidyverse")</code></p></li>
+<li><p><code>%&gt;%</code> is called a <strong>pipe</strong></p>
+<ul>
+<li><p>Allows mtcars to be the first argument into the function into the function <code>rownames_to_column(var = ___ )</code></p></li>
+<li><p>Could instead have written <code>mtcars_df &lt;- rownames_to_column(mtcars, var = ___ )</code></p></li>
+<li><p>Use pipe because it is easier to read</p></li>
+</ul></li>
+<li><p>Could also use <code>|&gt;</code></p></li>
+<li><p>Tibble packages</p>
+<ul>
+<li>Allows to work with data frames in terms of the aesthetics of the data frame</li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># # Load the dplyr package</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'dplyr'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:stats':
+
+    filter, lag</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tibble)</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="co"># # Convert row names to a column for easier manipulation</span></span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>mtcars_df <span class="ot">&lt;-</span> mtcars <span class="sc">%&gt;%</span></span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>   tibble<span class="sc">::</span><span class="fu">rownames_to_column</span>(<span class="at">var =</span> <span class="st">"car_model"</span>)</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(mtcars_df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>          car_model  mpg cyl disp  hp drat    wt  qsec vs am gear carb
+1         Mazda RX4 21.0   6  160 110 3.90 2.620 16.46  0  1    4    4
+2     Mazda RX4 Wag 21.0   6  160 110 3.90 2.875 17.02  0  1    4    4
+3        Datsun 710 22.8   4  108  93 3.85 2.320 18.61  1  1    4    1
+4    Hornet 4 Drive 21.4   6  258 110 3.08 3.215 19.44  1  0    3    1
+5 Hornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2
+6           Valiant 18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre>
+</div>
+</div>
+<ul>
+<li><p>this turns car_model into a variable</p>
+<ul>
+<li>visually, turns it from individual row names to one column car_model with all the row names as values</li>
+</ul></li>
+</ul>
+<div style="height: 100px; background-color: white;">
+
+</div>
+</section>
+<section id="core-data-transformations" class="level3">
+<h3 class="anchored" data-anchor-id="core-data-transformations"><strong>Core Data Transformations</strong></h3>
+<section id="select-choose-columns" class="level4">
+<h4 class="anchored" data-anchor-id="select-choose-columns"><strong>1. <code>select()</code>: Choose Columns</strong></h4>
+<p><code>select()</code> allows you to create a new data frame containing only the columns you specify.</p>
+<ul>
+<li><p>Allows you to get columns from the actual data frame</p></li>
+<li><p>Also can remove columns from the data frame</p></li>
+<li><p>Return argument is a data frame</p></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># # Choose the car_model, mpg, hp, and wt columns</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>car_performance_df <span class="ot">&lt;-</span> mtcars_df <span class="sc">%&gt;%</span></span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">select</span>(car_model, mpg, hp, wt)</span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(car_performance_df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>          car_model  mpg  hp    wt
+1         Mazda RX4 21.0 110 2.620
+2     Mazda RX4 Wag 21.0 110 2.875
+3        Datsun 710 22.8  93 2.320
+4    Hornet 4 Drive 21.4 110 3.215
+5 Hornet Sportabout 18.7 175 3.440
+6           Valiant 18.1 105 3.460</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># To remove car_model, mpg, hp, and wt columns</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>car_performance_df2 <span class="ot">&lt;-</span> mtcars_df <span class="sc">%&gt;%</span></span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">select</span>(<span class="sc">-</span>car_model, <span class="sc">-</span>mpg, <span class="sc">-</span>hp, <span class="sc">-</span>wt)</span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(car_performance_df2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  cyl disp drat  qsec vs am gear carb
+1   6  160 3.90 16.46  0  1    4    4
+2   6  160 3.90 17.02  0  1    4    4
+3   4  108 3.85 18.61  1  1    4    1
+4   6  258 3.08 19.44  1  0    3    1
+5   8  360 3.15 17.02  0  0    3    2
+6   6  225 2.76 20.22  1  0    3    1</code></pre>
+</div>
+</div>
+<ul>
+<li><p><code>View(car_performance_df)</code> shows a table of values from mtcars according to which columns were specified in the <code>select()</code> argument</p></li>
+<li><p>Removing columns in the argument produces the original mtcars data without the specified columns</p></li>
+</ul>
+<section id="pull-get-a-vector" class="level5">
+<h5 class="anchored" data-anchor-id="pull-get-a-vector"><strong><code>pull()</code>: Get A Vector</strong></h5>
+<ul>
+<li><code>pull()</code> allows you to get the information as a vector</li>
+<li>Return argument is a vector</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>car_performance_2 <span class="ot">&lt;-</span> mtcars_df <span class="sc">%&gt;%</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">pull</span>(mpg)</span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>car_performance_2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] 21.0 21.0 22.8 21.4 18.7 18.1 14.3 24.4 22.8 19.2 17.8 16.4 17.3 15.2 10.4
+[16] 10.4 14.7 32.4 30.4 33.9 21.5 15.5 15.2 13.3 19.2 27.3 26.0 30.4 15.8 19.7
+[31] 15.0 21.4</code></pre>
+</div>
+</div>
+<div style="height: 100px; background-color: white;">
+
+</div>
+</section>
+</section>
+<section id="mutate-create-new-columns" class="level4">
+<h4 class="anchored" data-anchor-id="mutate-create-new-columns"><strong>2. <code>mutate()</code>: Create New Columns</strong></h4>
+<p><code>mutate()</code> adds new columns or transforms existing ones while keeping all other columns.</p>
+<ul>
+<li>Allows us to create a new variable from already existing data</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co"># # Add a new column for weight in kilograms</span></span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>car_performance_kilos_df <span class="ot">&lt;-</span> car_performance_df <span class="sc">%&gt;%</span></span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">mutate</span>(<span class="at">wt_kg =</span> wt <span class="sc">*</span> <span class="dv">1000</span> <span class="sc">*</span> <span class="fl">0.453592</span>)</span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(car_performance_kilos_df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>          car_model  mpg  hp    wt    wt_kg
+1         Mazda RX4 21.0 110 2.620 1188.411
+2     Mazda RX4 Wag 21.0 110 2.875 1304.077
+3        Datsun 710 22.8  93 2.320 1052.333
+4    Hornet 4 Drive 21.4 110 3.215 1458.298
+5 Hornet Sportabout 18.7 175 3.440 1560.356
+6           Valiant 18.1 105 3.460 1569.428</code></pre>
+</div>
+</div>
+<ul>
+<li><p>created variable <code>wt_kg</code></p></li>
+<li><p>Modifies <code>car_performance_df</code> data frame to add <code>wt_kg</code></p></li>
+</ul>
+<div style="height: 100px; background-color: white;">
+
+</div>
+</section>
+<section id="filter-keep-rows" class="level4">
+<h4 class="anchored" data-anchor-id="filter-keep-rows"><strong>3. <code>filter()</code>: Keep Rows</strong></h4>
+<p><code>filter()</code> creates a new data frame containing only the rows that meet your logical conditions.</p>
+<ul>
+<li>Filter rows, specify a logical condition and see if it’s true/false</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co"># # Find cars with more than 200 horsepower</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>powerful_cars_df <span class="ot">&lt;-</span> car_performance_df <span class="sc">%&gt;%</span></span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">filter</span>(hp <span class="sc">&gt;</span> <span class="dv">200</span>)</span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(powerful_cars_df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>            car_model  mpg  hp    wt
+1          Duster 360 14.3 245 3.570
+2  Cadillac Fleetwood 10.4 205 5.250
+3 Lincoln Continental 10.4 215 5.424
+4   Chrysler Imperial 14.7 230 5.345
+5          Camaro Z28 13.3 245 3.840
+6      Ford Pantera L 15.8 264 3.170</code></pre>
+</div>
+</div>
+<ul>
+<li>Returns a modified data frame with only observations (rows) that have hp &gt; 200</li>
+</ul>
+<div style="height: 100px; background-color: white;">
+
+</div>
+</section>
+<section id="group_by-summarize-get-group-summaries" class="level4">
+<h4 class="anchored" data-anchor-id="group_by-summarize-get-group-summaries"><strong>4. <code>group_by()</code> &amp; <code>summarize()</code>: Get Group Summaries</strong></h4>
+<p><code>group_by()</code> specifies groups, and <code>summarize()</code> collapses each group into a single-row summary.</p>
+<ul>
+<li><p><code>group_by()</code> chooses the attribute to group the data by (e.g.&nbsp;cylinder, mpg, wt, etc)</p></li>
+<li><p><code>summarize()</code> finds the statistic (mean, min, etc) of a different attribute of each category that was grouped (e.g.&nbsp;mpg, wt, etc)</p></li>
+<li><p>There can be N/A values</p>
+<ul>
+<li><p>would not work</p></li>
+<li><p>use <code>na.rm = TRUE</code> to remove values of N/A</p></li>
+</ul></li>
+<li><p>Create column names <code>name = function()</code></p></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="co"># # Find the average mpg for each cylinder count</span></span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>avg_by_cyl_df <span class="ot">&lt;-</span> mtcars_df <span class="sc">%&gt;%</span></span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">group_by</span>(cyl) <span class="sc">%&gt;%</span></span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a>   <span class="fu">summarize</span>(<span class="at">avg_mpg =</span> <span class="fu">mean</span>(mpg, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="at">sd_mpg =</span> <span class="fu">sd</span>(mpg))</span>
+<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a>avg_by_cyl_df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 3
+    cyl avg_mpg sd_mpg
+  &lt;dbl&gt;   &lt;dbl&gt;  &lt;dbl&gt;
+1     4    26.7   4.51
+2     6    19.7   1.45
+3     8    15.1   2.56</code></pre>
+</div>
+</div>
+<ul>
+<li>Group by cylinder number, summarize and find the mean corresponding to each cylinder type</li>
+</ul>
+<div style="height: 100px; background-color: white;">
+
+</div>
+</section>
+<section id="arrange-sort-rows" class="level4">
+<h4 class="anchored" data-anchor-id="arrange-sort-rows"><strong>5. <code>arrange()</code>: Sort Rows</strong></h4>
+<p><code>arrange()</code> reorders the rows of a data frame based on column values. The default is ascending order; use <code>desc()</code> for descending.</p>
+<ul>
+<li><p>Sort the numbers</p></li>
+<li><p><code>arrange(desc())</code> for descending</p></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Sort cars by miles-per-gallon, from lowest to highest</span></span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>sorted_by_mpg_df <span class="ot">&lt;-</span> car_performance_df <span class="sc">%&gt;%</span></span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">arrange</span>(mpg)</span>
+<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(sorted_by_mpg_df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>            car_model  mpg  hp    wt
+1  Cadillac Fleetwood 10.4 205 5.250
+2 Lincoln Continental 10.4 215 5.424
+3          Camaro Z28 13.3 245 3.840
+4          Duster 360 14.3 245 3.570
+5   Chrysler Imperial 14.7 230 5.345
+6       Maserati Bora 15.0 335 3.570</code></pre>
+</div>
+</div>
+<hr>
+<div style="height: 300px; background-color: white;">
+
+</div>
+</section>
+</section>
+</section>
+<section id="video-3-ggplot2---1-the-grammar-of-graphics" class="level2">
+<h2 class="anchored" data-anchor-id="video-3-ggplot2---1-the-grammar-of-graphics"><strong>Video 3) <code>ggplot2</code> - 1: The Grammar of Graphics</strong></h2>
+<section id="ggplot-and--" class="level4">
+<h4 class="anchored" data-anchor-id="ggplot-and--"><strong>ggplot and - <code>+</code></strong></h4>
+<p>This section uses the <code>ggplot2</code> package to visualize the <code>mtcars</code> data. <code>ggplot2</code> builds plots in layers. We start with the data, then map variables to aesthetics, and finally add geometric layers to draw the plot. The <strong>plus sign (<code>+</code>)</strong> is crucial; it’s used to add new layers to the plot.</p>
+<p><code>ggplot2</code> is within the <code>tidyverse</code> package</p>
+<ul>
+<li>ggplot works in layers</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="co"># # Load the ggplot2 package</span></span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div style="height: 100px; background-color: white;">
+
+</div>
+</section>
+<section id="plot-types" class="level3">
+<h3 class="anchored" data-anchor-id="plot-types"><strong>Plot Types</strong></h3>
+<section id="plot-1-scatter-plot" class="level4">
+<h4 class="anchored" data-anchor-id="plot-1-scatter-plot"><strong>Plot 1: Scatter Plot</strong></h4>
+<p>Let’s build a scatter plot showing the relationship between car weight and fuel efficiency. Used to view relationship between two quantitative variables.</p>
+<ul>
+<li><strong>Variables Used</strong>: <code>wt</code> (Weight) on the x-axis, <code>mpg</code> (Miles Per Gallon) on the y-axis.</li>
+</ul>
+<p><strong>Step 1: Initialize the Plot</strong> The <code>ggplot()</code> function creates the coordinate system. The <code>aes()</code> (aesthetic) function specifies how variables from our data are mapped to visual properties of the plot, like the x and y axes. This step doesn’t draw anything yet.</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="co"># # Initialize plot and map weight to x-axis and mpg to y-axis</span></span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>p1 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> mtcars, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> wt, <span class="at">y =</span> mpg))</span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a>p1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Videos_1-4_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="480"></p>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li><p>Only initializes the plot, doesn’t generate one since the geometric layer is not specified</p></li>
+<li><p>Explanatory variable on x axis, response variable on y axis</p></li>
+</ul>
+<p><strong>Step 2: Add a Geometric Layer</strong> Now we add a layer with a <code>geom_</code> function to actually draw something. <code>geom_point()</code> creates a scatter plot.</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="co"># # Add the point layer to our initialized plot</span></span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>p1 <span class="sc">+</span> <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Videos_1-4_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="480"></p>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li><p>Generates points on top of the grid</p>
+<ul>
+<li>Both variables are quantitative, so geom_point for an ordered pair makes sense</li>
+</ul></li>
+</ul>
+<div style="height: 100px; background-color: white;">
+
+</div>
+</section>
+<section id="plot-2-histogram" class="level4">
+<h4 class="anchored" data-anchor-id="plot-2-histogram"><strong>Plot 2: Histogram</strong></h4>
+<p>A histogram shows the distribution of a single quantitative variable by dividing it into bins and counting the number of observations in each bin.</p>
+<ul>
+<li><strong>Variable Used</strong>: <code>mpg</code> (Miles Per Gallon) on the x-axis.</li>
+</ul>
+<p>The <code>geom_histogram()</code> function requires only an <code>x</code> aesthetic. The <code>binwidth</code> argument controls how wide each bar is.</p>
+<ul>
+<li>Ideally a quantitative variable</li>
+</ul>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="co"># # Create a histogram of the mpg variable</span></span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> mtcars, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> mpg)) <span class="sc">+</span></span>
+<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="at">binwidth =</span> <span class="dv">2</span>) <span class="sc">+</span> </span>
+<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_bw</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Videos_1-4_files/figure-html/unnamed-chunk-16-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="480"></p>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li><p><code>theme_bw</code> gets rid of grey background</p></li>
+<li><p>+ adds a new layer</p></li>
+</ul>
+<div style="height: 100px; background-color: white;">
+
+</div>
+</section>
+<section id="plot-3-boxplot" class="level4">
+<h4 class="anchored" data-anchor-id="plot-3-boxplot"><strong>Plot 3: Boxplot</strong></h4>
+<p>A boxplot is excellent for comparing the distribution of a continuous variable across different groups of a categorical variable.</p>
+<ul>
+<li><strong>Variables Used</strong>: <code>cyl</code> (Number of Cylinders) as a categorical variable on the x-axis, <code>mpg</code> (Miles Per Gallon) on the y-axis as quantitative.</li>
+</ul>
+<p>We use <code>factor(cyl)</code> to tell <code>ggplot</code> to treat the number of cylinders as distinct groups, not a continuous number. <code>geom_boxplot()</code> creates the boxes.</p>
+<ul>
+<li><code>factor(varible)</code> treats the quantitative variable as a categorical variable with categories</li>
+</ul>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="co"># # Create boxplots of mpg for each cylinder group</span></span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> mtcars, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">factor</span>(cyl), <span class="at">y =</span> mpg)) <span class="sc">+</span></span>
+<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Videos_1-4_files/figure-html/unnamed-chunk-17-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="480"></p>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li><p>Should see 3 boxplots corresponding to the three levels of <code>cyl</code></p></li>
+<li><p>Could also do <code>aes(y = factor(cyl), x = mpg))</code> and <code>coord_flip()</code> which would give the same plot as before</p></li>
+</ul>
+<div style="height: 100px; background-color: white;">
+
+</div>
+</section>
+<section id="plot-4-enhancing-a-plot-layer-by-layer" class="level4">
+<h4 class="anchored" data-anchor-id="plot-4-enhancing-a-plot-layer-by-layer"><strong>Plot 4: Enhancing a Plot Layer by Layer</strong></h4>
+<p>Let’s take our original scatter plot and improve it.</p>
+<ul>
+<li><strong>Variables Used</strong>: <code>wt</code> on the x-axis, <code>mpg</code> on the y-axis.</li>
+</ul>
+<p><strong>Step 1: Base Scatter Plot</strong></p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="co"># # This is our base plot from before</span></span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a>base_plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> mtcars, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> wt, <span class="at">y =</span> mpg)) <span class="sc">+</span></span>
+<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_point</span>()</span>
+<span id="cb45-4"><a href="#cb45-4" aria-hidden="true" tabindex="-1"></a>base_plot</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Videos_1-4_files/figure-html/unnamed-chunk-18-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="480"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><strong>Step 2: Add Labels</strong> The <code>labs()</code> function lets you change the title, subtitle, caption, and axis labels.</p>
+<ul>
+<li>titles must be in quotations</li>
+</ul>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>labeled_plot <span class="ot">&lt;-</span> base_plot <span class="sc">+</span></span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>   <span class="fu">labs</span>(</span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>     <span class="at">title =</span> <span class="st">"Fuel Efficiency vs Car Weight"</span>,</span>
+<span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a>     <span class="at">x =</span> <span class="st">"Weight (1000 lbs)"</span>,</span>
+<span id="cb46-5"><a href="#cb46-5" aria-hidden="true" tabindex="-1"></a>     <span class="at">y =</span> <span class="st">"Miles Per Gallon"</span></span>
+<span id="cb46-6"><a href="#cb46-6" aria-hidden="true" tabindex="-1"></a>   )</span>
+<span id="cb46-7"><a href="#cb46-7" aria-hidden="true" tabindex="-1"></a>labeled_plot</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Videos_1-4_files/figure-html/unnamed-chunk-19-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="480"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><strong>Step 3: Add a Theme</strong> <code>theme_</code> functions control the non-data elements of the plot, like the background color and grid lines.</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>themed_plot <span class="ot">&lt;-</span> labeled_plot <span class="sc">+</span></span>
+<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>   <span class="fu">theme_minimal</span>()</span>
+<span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a>themed_plot</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Videos_1-4_files/figure-html/unnamed-chunk-20-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="480"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><strong>Step 4: Add a Trendline</strong> <code>geom_smooth()</code> can add a smoothed conditional mean. The argument <code>method = "lm"</code> specifies a linear model trendline.</p>
+<ul>
+<li><p>se is standard error (otherwise would be a grey band around the line)</p></li>
+<li><p><code>theme()</code> controls fonts, colors, size</p></li>
+</ul>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>final_plot <span class="ot">&lt;-</span> themed_plot <span class="sc">+</span></span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a>final_plot <span class="sc">+</span></span>
+<span id="cb48-4"><a href="#cb48-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme</span>(<span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">hjust =</span> <span class="fl">0.5</span>, <span class="at">face =</span> <span class="st">"bold"</span>, <span class="at">size =</span> <span class="dv">15</span>, <span class="at">color =</span> <span class="st">"red"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
+</div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Videos_1-4_files/figure-html/unnamed-chunk-21-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="480"></p>
+</figure>
+</div>
+</div>
+</div>
+<hr>
+<div style="height: 300px; background-color: white;">
+
+</div>
+</section>
+</section>
+</section>
+<section id="video-4-dplyr---2-tidyr-advanced-transformation" class="level2">
+<h2 class="anchored" data-anchor-id="video-4-dplyr---2-tidyr-advanced-transformation"><strong>Video 4) <code>dplyr</code> - 2 &amp; <code>tidyr</code>: Advanced Transformation</strong></h2>
+<section id="reshape-data" class="level3">
+<h3 class="anchored" data-anchor-id="reshape-data"><strong>Reshape Data</strong></h3>
+<p>This section covers more advanced data wrangling. We’ll combine data with <code>dplyr</code> joins and reshape it with <code>tidyr</code> pivots. These functions are the key to transforming messy data into the tidy format required for analysis.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load dplyr and tidyr packages</span></span>
+<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb50-3"><a href="#cb50-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div style="height: 100px; background-color: white;">
+
+</div>
+</section>
+<section id="binds" class="level3">
+<h3 class="anchored" data-anchor-id="binds"><strong>Binds</strong></h3>
+<section id="bind_rows" class="level4">
+<h4 class="anchored" data-anchor-id="bind_rows"><strong>1. <code>bind_rows</code></strong></h4>
+<p><code>bind_rows</code> stacks two or more data frames on top of each other. It’s like adding more rows.</p>
+<p>The data frames can have a different number of columns, the extra cells will be populated with NA</p>
+<p><strong>Setup:</strong> First, create two simple data frames.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a>df1 <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>, <span class="at">y =</span> <span class="fu">c</span>(<span class="st">"a"</span>, <span class="st">"b"</span>), <span class="at">z =</span> <span class="dv">3</span><span class="sc">:</span><span class="dv">4</span>) </span>
+<span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a>df2 <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">x =</span> <span class="dv">3</span><span class="sc">:</span><span class="dv">4</span>, <span class="at">y =</span> <span class="fu">c</span>(<span class="st">"c"</span>, <span class="st">"d"</span>))</span>
+<span id="cb51-3"><a href="#cb51-3" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(df1, <span class="at">align =</span> <span class="st">'ccc'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: center;">x</th>
+<th style="text-align: center;">y</th>
+<th style="text-align: center;">z</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">a</td>
+<td style="text-align: center;">3</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">b</td>
+<td style="text-align: center;">4</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(df2, <span class="at">align =</span> <span class="st">'cc'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: center;">x</th>
+<th style="text-align: center;">y</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">c</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">d</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><em>Note</em>: <code>1:3</code> = a vector <code>1 2 3</code></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="co"># bind_rows() stacks them into one data frame</span></span>
+<span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a>combined_rows <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(df1, df2)</span>
+<span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(combined_rows, <span class="at">align =</span> <span class="st">'c'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: center;">x</th>
+<th style="text-align: center;">y</th>
+<th style="text-align: center;">z</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">a</td>
+<td style="text-align: center;">3</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">b</td>
+<td style="text-align: center;">4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">c</td>
+<td style="text-align: center;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">d</td>
+<td style="text-align: center;">NA</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><em>Note</em>: could also use pipe function, and can have multiple data frames within <code>bind_rows</code></p>
+<div style="height: 100px; background-color: white;">
+
+</div>
+</section>
+<section id="bind_cols" class="level4">
+<h4 class="anchored" data-anchor-id="bind_cols"><strong>2. <code>bind_cols</code></strong></h4>
+<p><code>bind_cols</code> combines two data frames side-by-side. It’s like adding more columns. The data frames must have the same number of rows – observations may not necessarily align otherwise</p>
+<p><strong>Setup:</strong> First, create two simple data frames.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>df_a <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>, <span class="at">y =</span> <span class="fu">c</span>(<span class="st">"a"</span>, <span class="st">"b"</span>, <span class="st">"c"</span>))</span>
+<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a>df_b <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">z =</span> <span class="dv">4</span><span class="sc">:</span><span class="dv">6</span>)</span>
+<span id="cb54-3"><a href="#cb54-3" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(df_a, <span class="at">align =</span> <span class="st">'c'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: center;">x</th>
+<th style="text-align: center;">y</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">a</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">b</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">c</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sourceCode cell-code" id="cb55"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(df_b, <span class="at">align =</span> <span class="st">'c'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: center;">z</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">4</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">6</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a> <span class="co"># bind_cols() combines them side-by-side</span></span>
+<span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a>combined_cols <span class="ot">&lt;-</span> <span class="fu">bind_cols</span>(df_a, df_b)</span>
+<span id="cb56-3"><a href="#cb56-3" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(combined_cols, <span class="at">align =</span> <span class="st">'c'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: center;">x</th>
+<th style="text-align: center;">y</th>
+<th style="text-align: center;">z</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">a</td>
+<td style="text-align: center;">4</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">b</td>
+<td style="text-align: center;">5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">c</td>
+<td style="text-align: center;">6</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div style="height: 200px; background-color: white;">
+
+</div>
+<hr>
+</section>
+</section>
+<section id="joins-combining-data-by-a-key" class="level3">
+<h3 class="anchored" data-anchor-id="joins-combining-data-by-a-key"><strong>Joins: Combining Data by a Key</strong></h3>
+<p>Joins are used to combine variables from two tables based on a matching “key” column. We’ll use the classic <code>band_members</code> and <code>band_instruments</code> datasets to learn this.</p>
+<p><code>left_join</code>, <code>right_join</code>, <code>inner_join</code>, <code>full_join</code>, and <code>semi_join</code> are all functions within <code>dplyr</code>.</p>
+<p><img src="https://raw.githubusercontent.com/gadenbuie/tidyexplain/master/images/static/png/original-dfs.png" class="img-fluid" style="width:60.0%"></p>
+<p><strong>Setup:</strong> Create the two data frames we will use for all join examples.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb57"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(knitr)</span>
+<span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a>band_members <span class="ot">&lt;-</span> <span class="fu">tribble</span>(</span>
+<span id="cb57-3"><a href="#cb57-3" aria-hidden="true" tabindex="-1"></a>  <span class="sc">~</span>name,     <span class="sc">~</span>band,</span>
+<span id="cb57-4"><a href="#cb57-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Mick"</span>, <span class="st">"Stones"</span>,</span>
+<span id="cb57-5"><a href="#cb57-5" aria-hidden="true" tabindex="-1"></a>  <span class="st">"John"</span>, <span class="st">"Beatles"</span>,</span>
+<span id="cb57-6"><a href="#cb57-6" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Paul"</span>, <span class="st">"Beatles"</span></span>
+<span id="cb57-7"><a href="#cb57-7" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb57-8"><a href="#cb57-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb57-9"><a href="#cb57-9" aria-hidden="true" tabindex="-1"></a>band_instruments <span class="ot">&lt;-</span> <span class="fu">tribble</span>(</span>
+<span id="cb57-10"><a href="#cb57-10" aria-hidden="true" tabindex="-1"></a>  <span class="sc">~</span>name,   <span class="sc">~</span>plays,</span>
+<span id="cb57-11"><a href="#cb57-11" aria-hidden="true" tabindex="-1"></a>  <span class="st">"John"</span>,   <span class="st">"guitar"</span>,</span>
+<span id="cb57-12"><a href="#cb57-12" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Paul"</span>,   <span class="st">"bass"</span>,</span>
+<span id="cb57-13"><a href="#cb57-13" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Keith"</span>,  <span class="st">"guitar"</span></span>
+<span id="cb57-14"><a href="#cb57-14" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb57-15"><a href="#cb57-15" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(band_members)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">name</th>
+<th style="text-align: left;">band</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Mick</td>
+<td style="text-align: left;">Stones</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">John</td>
+<td style="text-align: left;">Beatles</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Paul</td>
+<td style="text-align: left;">Beatles</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sourceCode cell-code" id="cb58"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(band_instruments)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">name</th>
+<th style="text-align: left;">plays</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">John</td>
+<td style="text-align: left;">guitar</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Paul</td>
+<td style="text-align: left;">bass</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Keith</td>
+<td style="text-align: left;">guitar</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div style="height: 100px; background-color: white;">
+
+</div>
+<section id="left_join" class="level4">
+<h4 class="anchored" data-anchor-id="left_join"><strong>1. <code>left_join</code></strong></h4>
+<p>A <code>left_join</code> keeps <strong>all rows</strong> from the first (left, x) data frame and adds matching data from the second (right, y)</p>
+<p>Whatever is on the right that doesn’t match will not be in the resulting data frame</p>
+<p><em>Note</em>: <code>right_join</code> also exists and functions the same way but keeps all rows from the right data frame</p>
+<p><img src="https://raw.githubusercontent.com/gadenbuie/tidyexplain/master/images/left-join.gif" class="img-fluid" style="width:60.0%"></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb59"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="co"># This keeps all members from band_members and adds their instrument if available</span></span>
+<span id="cb59-2"><a href="#cb59-2" aria-hidden="true" tabindex="-1"></a>lj_df <span class="ot">&lt;-</span> <span class="fu">left_join</span>(band_instruments, band_members, <span class="at">by =</span> <span class="st">"name"</span>)</span>
+<span id="cb59-3"><a href="#cb59-3" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(lj_df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">name</th>
+<th style="text-align: left;">plays</th>
+<th style="text-align: left;">band</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">John</td>
+<td style="text-align: left;">guitar</td>
+<td style="text-align: left;">Beatles</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Paul</td>
+<td style="text-align: left;">bass</td>
+<td style="text-align: left;">Beatles</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Keith</td>
+<td style="text-align: left;">guitar</td>
+<td style="text-align: left;">NA</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>If we flip the left and right, we won’t get the same result.</p>
+<p>Choose what the two data frames are matching with using <code>by = "column name"</code></p>
+<ul>
+<li>Otherwise, R will guess which column to join by with whichever columns exist in both data frames (e.g.&nbsp;name)</li>
+</ul>
+<div style="height: 100px; background-color: white;">
+
+</div>
+</section>
+<section id="inner_join" class="level4">
+<h4 class="anchored" data-anchor-id="inner_join"><strong>2. <code>inner_join</code></strong></h4>
+<p>An <code>inner_join</code> only keeps rows where the key exists in <strong>both</strong> data frames.</p>
+<p><img src="https://raw.githubusercontent.com/gadenbuie/tidyexplain/master/images/inner-join.gif" class="img-fluid" style="width:60.0%"></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb60"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a><span class="co"># This only includes members who are in BOTH tables (John and Paul)</span></span>
+<span id="cb60-2"><a href="#cb60-2" aria-hidden="true" tabindex="-1"></a>ij_df <span class="ot">&lt;-</span> <span class="fu">inner_join</span>(band_members, band_instruments, <span class="at">by =</span> <span class="st">"name"</span>)</span>
+<span id="cb60-3"><a href="#cb60-3" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(ij_df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">name</th>
+<th style="text-align: left;">band</th>
+<th style="text-align: left;">plays</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">John</td>
+<td style="text-align: left;">Beatles</td>
+<td style="text-align: left;">guitar</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Paul</td>
+<td style="text-align: left;">Beatles</td>
+<td style="text-align: left;">bass</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div style="height: 100px; background-color: white;">
+
+</div>
+</section>
+<section id="full_join" class="level4">
+<h4 class="anchored" data-anchor-id="full_join"><strong>3. <code>full_join</code></strong></h4>
+<p>A <code>full_join</code> keeps <strong>all rows</strong> from <strong>both</strong> data frames, filling in missing values with <code>NA</code>.</p>
+<p><img src="https://raw.githubusercontent.com/gadenbuie/tidyexplain/master/images/full-join.gif" class="img-fluid" style="width:60.0%"></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb61"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a><span class="co"># This keeps every person from both tables</span></span>
+<span id="cb61-2"><a href="#cb61-2" aria-hidden="true" tabindex="-1"></a>full_df <span class="ot">&lt;-</span> <span class="fu">full_join</span>(band_members, band_instruments, <span class="at">by =</span> <span class="st">"name"</span>)</span>
+<span id="cb61-3"><a href="#cb61-3" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(full_df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">name</th>
+<th style="text-align: left;">band</th>
+<th style="text-align: left;">plays</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Mick</td>
+<td style="text-align: left;">Stones</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">John</td>
+<td style="text-align: left;">Beatles</td>
+<td style="text-align: left;">guitar</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Paul</td>
+<td style="text-align: left;">Beatles</td>
+<td style="text-align: left;">bass</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Keith</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">guitar</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div style="height: 100px; background-color: white;">
+
+</div>
+</section>
+<section id="semi_join" class="level4">
+<h4 class="anchored" data-anchor-id="semi_join"><strong>4. <code>semi_join</code></strong></h4>
+<p>A <code>semi_join</code> is a <strong>filtering join</strong>. It keeps all rows from the left data frame that have a match in the right, but <strong>does not add any columns</strong>.</p>
+<p>It keeps the results of the first/left data frame, doesn’t keep any information from the right.</p>
+<p><img src="https://github.com/gadenbuie/tidyexplain/raw/main/images/semi-join.gif" class="img-fluid" style="width:60.0%"></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb62"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a><span class="co"># This returns only the members from band_members who also have an instrument listed</span></span>
+<span id="cb62-2"><a href="#cb62-2" aria-hidden="true" tabindex="-1"></a>semi_df <span class="ot">&lt;-</span> <span class="fu">semi_join</span>(band_members, band_instruments, <span class="at">by =</span> <span class="st">"name"</span>)</span>
+<span id="cb62-3"><a href="#cb62-3" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(semi_df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">name</th>
+<th style="text-align: left;">band</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">John</td>
+<td style="text-align: left;">Beatles</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Paul</td>
+<td style="text-align: left;">Beatles</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div style="height: 200px; background-color: white;">
+
+</div>
+<hr>
+</section>
+</section>
+<section id="pivots-reshaping-data-layout" class="level3">
+<h3 class="anchored" data-anchor-id="pivots-reshaping-data-layout"><strong>Pivots: Reshaping Data Layout</strong></h3>
+<p>Pivoting changes the shape of your data between “wide” and “long” formats.</p>
+<p><code>pivot_wider</code> and <code>pivot_longer</code> are both found in <code>tidyr</code>.</p>
+<p><img src="https://github.com/gadenbuie/tidyexplain/raw/main/images/static/png/original-dfs-tidy.png" class="img-fluid" style="width:60.0%"></p>
+<section id="a.-pivot_longer" class="level4">
+<h4 class="anchored" data-anchor-id="a.-pivot_longer"><strong>a. <code>pivot_longer</code></strong></h4>
+<p><code>pivot_longer</code> makes “wide” data longer. It’s useful when column names are actually values of a variable.</p>
+<ul>
+<li><p>Each row denotes a particular measurement that corresponds to an observation</p></li>
+<li><p>Can have multiple rows that correspond to multiple observations with different variables</p></li>
+<li><p>Multiple observations with different measurements</p></li>
+</ul>
+<p><strong>Setup:</strong> We’ll use <code>table4a</code>, where years are column names.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb63"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(table4a, <span class="at">align =</span> <span class="st">"c"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: center;">country</th>
+<th style="text-align: center;">1999</th>
+<th style="text-align: center;">2000</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Afghanistan</td>
+<td style="text-align: center;">745</td>
+<td style="text-align: center;">2666</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Brazil</td>
+<td style="text-align: center;">37737</td>
+<td style="text-align: center;">80488</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">China</td>
+<td style="text-align: center;">212258</td>
+<td style="text-align: center;">213766</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb64"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a><span class="co"># pivot_longer() makes the data "long" by gathering the year columns</span></span>
+<span id="cb64-2"><a href="#cb64-2" aria-hidden="true" tabindex="-1"></a>plonger <span class="ot">&lt;-</span> table4a <span class="sc">%&gt;%</span></span>
+<span id="cb64-3"><a href="#cb64-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(</span>
+<span id="cb64-4"><a href="#cb64-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">cols =</span> <span class="fu">c</span>(<span class="st">`</span><span class="at">1999</span><span class="st">`</span>, <span class="st">`</span><span class="at">2000</span><span class="st">`</span>),</span>
+<span id="cb64-5"><a href="#cb64-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">names_to =</span> <span class="st">"years"</span>,</span>
+<span id="cb64-6"><a href="#cb64-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">values_to =</span> <span class="st">"cases"</span></span>
+<span id="cb64-7"><a href="#cb64-7" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb64-8"><a href="#cb64-8" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(plonger, <span class="at">align =</span> <span class="st">"c"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: center;">country</th>
+<th style="text-align: center;">years</th>
+<th style="text-align: center;">cases</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Afghanistan</td>
+<td style="text-align: center;">1999</td>
+<td style="text-align: center;">745</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Afghanistan</td>
+<td style="text-align: center;">2000</td>
+<td style="text-align: center;">2666</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Brazil</td>
+<td style="text-align: center;">1999</td>
+<td style="text-align: center;">37737</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Brazil</td>
+<td style="text-align: center;">2000</td>
+<td style="text-align: center;">80488</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">China</td>
+<td style="text-align: center;">1999</td>
+<td style="text-align: center;">212258</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">China</td>
+<td style="text-align: center;">2000</td>
+<td style="text-align: center;">213766</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div style="height: 100px; background-color: white;">
+
+</div>
+</section>
+<section id="b.-pivot_wider" class="level4">
+<h4 class="anchored" data-anchor-id="b.-pivot_wider"><strong>b. <code>pivot_wider</code></strong></h4>
+<p><code>pivot_wider</code> is the inverse of <code>pivot_longer</code>. It makes “long” data wider.</p>
+<ul>
+<li><p>Each observation is a row, each column is a variable</p></li>
+<li><p>One observation per row with different measurements</p></li>
+</ul>
+<p><img src="https://github.com/gadenbuie/tidyexplain/raw/main/images/tidyr-pivoting.gif" class="img-fluid"></p>
+<p><strong>Setup:</strong> We’ll use <code>table2</code>, where observations are split across rows.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb65"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(table2, <span class="at">align =</span><span class="st">"c"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: center;">country</th>
+<th style="text-align: center;">year</th>
+<th style="text-align: center;">type</th>
+<th style="text-align: center;">count</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Afghanistan</td>
+<td style="text-align: center;">1999</td>
+<td style="text-align: center;">cases</td>
+<td style="text-align: center;">745</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Afghanistan</td>
+<td style="text-align: center;">1999</td>
+<td style="text-align: center;">population</td>
+<td style="text-align: center;">19987071</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Afghanistan</td>
+<td style="text-align: center;">2000</td>
+<td style="text-align: center;">cases</td>
+<td style="text-align: center;">2666</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Afghanistan</td>
+<td style="text-align: center;">2000</td>
+<td style="text-align: center;">population</td>
+<td style="text-align: center;">20595360</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Brazil</td>
+<td style="text-align: center;">1999</td>
+<td style="text-align: center;">cases</td>
+<td style="text-align: center;">37737</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Brazil</td>
+<td style="text-align: center;">1999</td>
+<td style="text-align: center;">population</td>
+<td style="text-align: center;">172006362</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Brazil</td>
+<td style="text-align: center;">2000</td>
+<td style="text-align: center;">cases</td>
+<td style="text-align: center;">80488</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Brazil</td>
+<td style="text-align: center;">2000</td>
+<td style="text-align: center;">population</td>
+<td style="text-align: center;">174504898</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">China</td>
+<td style="text-align: center;">1999</td>
+<td style="text-align: center;">cases</td>
+<td style="text-align: center;">212258</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">China</td>
+<td style="text-align: center;">1999</td>
+<td style="text-align: center;">population</td>
+<td style="text-align: center;">1272915272</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">China</td>
+<td style="text-align: center;">2000</td>
+<td style="text-align: center;">cases</td>
+<td style="text-align: center;">213766</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">China</td>
+<td style="text-align: center;">2000</td>
+<td style="text-align: center;">population</td>
+<td style="text-align: center;">1280428583</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb66"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a><span class="co"># pivot_wider() makes the data "wide"</span></span>
+<span id="cb66-2"><a href="#cb66-2" aria-hidden="true" tabindex="-1"></a><span class="co"># It takes the names for the new columns from the 'year' column</span></span>
+<span id="cb66-3"><a href="#cb66-3" aria-hidden="true" tabindex="-1"></a><span class="co"># and the values for those new columns from the 'count' column.</span></span>
+<span id="cb66-4"><a href="#cb66-4" aria-hidden="true" tabindex="-1"></a>pwider <span class="ot">&lt;-</span> table2 <span class="sc">%&gt;%</span></span>
+<span id="cb66-5"><a href="#cb66-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_wider</span>(</span>
+<span id="cb66-6"><a href="#cb66-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">names_from =</span> year,</span>
+<span id="cb66-7"><a href="#cb66-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">values_from =</span> count</span>
+<span id="cb66-8"><a href="#cb66-8" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb66-9"><a href="#cb66-9" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(pwider, <span class="at">align =</span> <span class="st">"c"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: center;">country</th>
+<th style="text-align: center;">type</th>
+<th style="text-align: center;">1999</th>
+<th style="text-align: center;">2000</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Afghanistan</td>
+<td style="text-align: center;">cases</td>
+<td style="text-align: center;">745</td>
+<td style="text-align: center;">2666</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Afghanistan</td>
+<td style="text-align: center;">population</td>
+<td style="text-align: center;">19987071</td>
+<td style="text-align: center;">20595360</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Brazil</td>
+<td style="text-align: center;">cases</td>
+<td style="text-align: center;">37737</td>
+<td style="text-align: center;">80488</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Brazil</td>
+<td style="text-align: center;">population</td>
+<td style="text-align: center;">172006362</td>
+<td style="text-align: center;">174504898</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">China</td>
+<td style="text-align: center;">cases</td>
+<td style="text-align: center;">212258</td>
+<td style="text-align: center;">213766</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">China</td>
+<td style="text-align: center;">population</td>
+<td style="text-align: center;">1272915272</td>
+<td style="text-align: center;">1280428583</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div style="height: 150px; background-color: white;">
+
+</div>
+</section>
+</section>
+<section id="separate-unite" class="level3">
+<h3 class="anchored" data-anchor-id="separate-unite"><strong><code>separate()</code> &amp; <code>unite()</code></strong></h3>
+<p>These functions handle cases where multiple values are stored in one column, or one value is split across multiple columns.</p>
+<section id="a.separate" class="level4">
+<h4 class="anchored" data-anchor-id="a.separate"><strong>a.<code>separate()</code></strong></h4>
+<p><code>separate()</code> splits one column into multiple columns.</p>
+<p><strong>Setup:</strong> We’ll use <code>table3</code>, where <code>rate</code> contains two values.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb67"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(table3, <span class="at">align =</span> <span class="st">"c"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: center;">country</th>
+<th style="text-align: center;">year</th>
+<th style="text-align: center;">rate</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Afghanistan</td>
+<td style="text-align: center;">1999</td>
+<td style="text-align: center;">745/19987071</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Afghanistan</td>
+<td style="text-align: center;">2000</td>
+<td style="text-align: center;">2666/20595360</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Brazil</td>
+<td style="text-align: center;">1999</td>
+<td style="text-align: center;">37737/172006362</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Brazil</td>
+<td style="text-align: center;">2000</td>
+<td style="text-align: center;">80488/174504898</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">China</td>
+<td style="text-align: center;">1999</td>
+<td style="text-align: center;">212258/1272915272</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">China</td>
+<td style="text-align: center;">2000</td>
+<td style="text-align: center;">213766/1280428583</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<ul>
+<li>Don’t necessarily need the <code>sep =</code> argument, R will guess, but you should keep it</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb68"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Separate the 'rate' column into 'cases' and 'population'</span></span>
+<span id="cb68-2"><a href="#cb68-2" aria-hidden="true" tabindex="-1"></a>sep_tab <span class="ot">&lt;-</span> table3 <span class="sc">%&gt;%</span></span>
+<span id="cb68-3"><a href="#cb68-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">separate</span>(rate, <span class="at">into =</span> <span class="fu">c</span>(<span class="st">"cases"</span>, <span class="st">"population"</span>), <span class="at">sep =</span> <span class="st">"/"</span>)</span>
+<span id="cb68-4"><a href="#cb68-4" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(sep_tab, <span class="at">align =</span> <span class="st">"c"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: center;">country</th>
+<th style="text-align: center;">year</th>
+<th style="text-align: center;">cases</th>
+<th style="text-align: center;">population</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Afghanistan</td>
+<td style="text-align: center;">1999</td>
+<td style="text-align: center;">745</td>
+<td style="text-align: center;">19987071</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Afghanistan</td>
+<td style="text-align: center;">2000</td>
+<td style="text-align: center;">2666</td>
+<td style="text-align: center;">20595360</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Brazil</td>
+<td style="text-align: center;">1999</td>
+<td style="text-align: center;">37737</td>
+<td style="text-align: center;">172006362</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Brazil</td>
+<td style="text-align: center;">2000</td>
+<td style="text-align: center;">80488</td>
+<td style="text-align: center;">174504898</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">China</td>
+<td style="text-align: center;">1999</td>
+<td style="text-align: center;">212258</td>
+<td style="text-align: center;">1272915272</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">China</td>
+<td style="text-align: center;">2000</td>
+<td style="text-align: center;">213766</td>
+<td style="text-align: center;">1280428583</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div style="height: 100px; background-color: white;">
+
+</div>
+</section>
+<section id="b.-unite" class="level4">
+<h4 class="anchored" data-anchor-id="b.-unite"><strong>b. <code>unite()</code></strong></h4>
+<p><code>unite()</code> combines multiple columns into a single column.</p>
+<p><strong>Setup:</strong> We’ll use <code>table5</code>, where the year is split into two columns.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb69"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(table5, <span class="at">align =</span> <span class="st">"c"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: center;">country</th>
+<th style="text-align: center;">century</th>
+<th style="text-align: center;">year</th>
+<th style="text-align: center;">rate</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Afghanistan</td>
+<td style="text-align: center;">19</td>
+<td style="text-align: center;">99</td>
+<td style="text-align: center;">745/19987071</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Afghanistan</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">00</td>
+<td style="text-align: center;">2666/20595360</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Brazil</td>
+<td style="text-align: center;">19</td>
+<td style="text-align: center;">99</td>
+<td style="text-align: center;">37737/172006362</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Brazil</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">00</td>
+<td style="text-align: center;">80488/174504898</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">China</td>
+<td style="text-align: center;">19</td>
+<td style="text-align: center;">99</td>
+<td style="text-align: center;">212258/1272915272</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">China</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">00</td>
+<td style="text-align: center;">213766/1280428583</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<ul>
+<li>Names don’t have to be in quotes because they are already variables</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb70"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb70-1"><a href="#cb70-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Unite the 'century' and 'year' columns into a new 'year' column</span></span>
+<span id="cb70-2"><a href="#cb70-2" aria-hidden="true" tabindex="-1"></a>un_table <span class="ot">&lt;-</span> table5 <span class="sc">%&gt;%</span></span>
+<span id="cb70-3"><a href="#cb70-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unite</span>(new_year, century, year, <span class="at">sep =</span> <span class="st">""</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb70-4"><a href="#cb70-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">new_year =</span> <span class="fu">as.numeric</span>(new_year))</span>
+<span id="cb70-5"><a href="#cb70-5" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(un_table, <span class="at">align =</span> <span class="st">"c"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: center;">country</th>
+<th style="text-align: center;">new_year</th>
+<th style="text-align: center;">rate</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Afghanistan</td>
+<td style="text-align: center;">1999</td>
+<td style="text-align: center;">745/19987071</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Afghanistan</td>
+<td style="text-align: center;">2000</td>
+<td style="text-align: center;">2666/20595360</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Brazil</td>
+<td style="text-align: center;">1999</td>
+<td style="text-align: center;">37737/172006362</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Brazil</td>
+<td style="text-align: center;">2000</td>
+<td style="text-align: center;">80488/174504898</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">China</td>
+<td style="text-align: center;">1999</td>
+<td style="text-align: center;">212258/1272915272</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">China</td>
+<td style="text-align: center;">2000</td>
+<td style="text-align: center;">213766/1280428583</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<ul>
+<li>The new column is a of character type until you use <code>mutate()</code> to make it into a numeric type</li>
+</ul>
+</section>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
